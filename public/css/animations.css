@@ -1,0 +1,105 @@
+@keyframes slideInMenu {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutMenu {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes hideAProposHead {
+    from {
+        justify-content: center;
+    }
+
+    to {
+        justify-content: flex-start;
+    }
+}
+
+@keyframes hideHomepage {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes showAPropos {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes showPortfolio {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-200vh);
+    }
+}
+
+@keyframes slideInHeader {
+    from {
+        opacity: 0;
+        transform: translateX(-50vh);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(O);
+    }
+}
+
+@keyframes slideInD {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(O);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes showAProposPanel {
+    from {
+        opacity: 0;
+        transform: translateY(20vh);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(O);
+    }
+}

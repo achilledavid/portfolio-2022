@@ -1,0 +1,409 @@
+/* ---------- SOMMAIRE ---------- */
+/* MISE EN PLACE */
+/* ICONES */
+/* CURSEUR */
+/* NAVIGATION */
+/* NAVIGATION MOBILE */
+/* PAGE D'ACCUEIL */
+/* PAGE A PROPOS */
+/* PAGE PORTFOLIO */
+/* MODAL CONTACT */
+/* ------------------------------- */
+
+
+/* MISE EN PLACE */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Montserrat";
+}
+
+*:link,
+*:visited {
+  color: black;
+  text-decoration: none;
+  cursor: none;
+}
+
+body {
+  min-width: 280px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* ICONES */
+
+.fa-bars::before {
+  content: "\f0c9";
+}
+
+.fa-external-link::before {
+  content: "\f08e";
+}
+
+.fa-xmark::before {
+  content: "\f00d";
+}
+
+/* CURSEUR */
+
+html {
+  cursor: none;
+  background: white;
+}
+
+html:hover .cursor--canvas {
+  mix-blend-mode: difference;
+  background: white;
+  z-index: 100000000;
+}
+
+.cursor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 12000;
+}
+
+.cursor--small {
+  position: absolute;
+  pointer-events: none;
+  width: 5px;
+  height: 5px;
+  left: -2.5px;
+  top: -2.5px;
+  border-radius: 50%;
+  z-index: 11000;
+  background: transparent;
+}
+
+.cursor--canvas {
+  position: absolute;
+  pointer-events: none;
+  width: 10px;
+  height: 10px;
+  left: -14px;
+  top: -14px;
+  border-radius: 50%;
+  z-index: 12000;
+}
+
+/* NAVIGATION */
+
+.nav-container {
+  width: 100%;
+  height: 80px;
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  display: flex;
+  width: 100%;
+  min-height: 80px;
+  align-items: center;
+  background: white;
+  z-index: 2;
+  min-width: 280px;
+}
+
+.nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-content {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: end;
+  gap: 50px;
+  margin-right: 50px;
+}
+
+.nav-content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.nav-title-anim {
+  animation-duration: 500ms;
+  animation-name: slideInHeader;
+  animation-fill-mode: both;
+}
+
+p {
+  transition: 300ms;
+}
+
+.nav-content .nav-title-anim:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.nav-content .nav-title-anim:nth-child(2) {
+  animation-delay: 600ms;
+}
+
+.nav-content .nav-title-anim:nth-child(1) {
+  animation-delay: 900ms;
+}
+
+.nav-content .contact {
+  background: #0071e3;
+  color: #fff;
+  border-radius: 980px;
+  padding: 4px 11px;
+}
+
+.nav-content .contact:hover {
+  background: #147ce5;
+  color: #fff;
+}
+
+.nav-content p:hover,
+.nav-content i:hover {
+  transform: translateY(-2px);
+  color: black;
+}
+
+/* NAVIGATION MOBILE */
+
+.nav-mobile-content {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  width: 100vw;
+  left: 0;
+  height: auto;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  background: white;
+  box-shadow: 0 7px 7px -7px rgb(0 0 0 / 40%);
+  padding-top: 90px;
+  padding-bottom: 20px;
+  z-index: 1;
+}
+
+.open {
+  animation-name: slideInMenu;
+  animation-duration: 500ms;
+}
+
+.close {
+  animation-name: slideOutMenu;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.nav-content i {
+  font-size: 16px;
+  transition: 300ms;
+}
+
+.nav-content i {
+  display: none;
+}
+
+/* PAGE D'ACCUEIL */
+
+.homepage {
+  padding: 0 50px 20vh 50px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background: white;
+  padding-bottom: 20vh;
+}
+
+.content p {
+  font-size: 8vw;
+  color: black;
+}
+
+.content p {
+  animation-delay: 1800ms;
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-name: slideInD;
+}
+
+.hidden {
+  animation-name: hideHomepage;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+/* PAGE A PROPOS */
+
+.a-propos {
+  padding: 0 50px 20vh 50px;
+  animation-name: showAPropos;
+  animation-duration: 1000ms;
+  animation-delay: 800ms;
+  animation-fill-mode: forwards;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.a-propos p {
+  font-size: 4vw;
+}
+
+.a-propos-title {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.a-propos-title p:last-child {
+  font-size: 5vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.a-propos-head {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.a-propos-head-hide {
+  animation-name: hideAProposHead;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.a-propos-panel {
+  margin-top: 30px;
+}
+
+.txt-panel-anim1 {
+  animation-name: showAProposPanel;
+  animation-delay: 1400ms;
+  animation-duration: 800ms;
+  animation-fill-mode: both;
+}
+
+.txt-panel-anim2 {
+  animation-name: showAProposPanel;
+  animation-delay: 1800ms;
+  animation-duration: 800ms;
+  animation-fill-mode: both;
+}
+
+.txt-panel-anim3 {
+  animation-name: showAProposPanel;
+  animation-delay: 2200ms;
+  animation-duration: 800ms;
+  animation-fill-mode: both;
+}
+
+
+.a-propos-panel h1 {
+  font-weight: 300;
+  font-size: 2vw;
+  margin-bottom: 10px;
+}
+
+.a-propos-panel p {
+  font-weight: 300;
+  font-size: 1vw;
+  text-align: justify;
+  max-width: 80ch;
+}
+
+.a-propos-photo {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: flex-end;
+}
+
+.a-propos-photo img {
+  width: 55%;
+  border-radius: 2rem;
+}
+
+.parent {
+  width: 100%;
+  display: flex;
+  gap: 2em;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+/* PAGE PORTFOLIO */
+
+.portfolio {
+  padding: 0 50px 20vh 50px;
+  animation-name: showPortfolio;
+  animation-duration: 1000ms;
+  animation-delay: 800ms;
+  animation-fill-mode: forwards;
+  background: red;
+}
+
+/* MODAL CONTACT */
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background: white;
+  width: fit-content;
+  padding: 2rem;
+  align-content: space-between;
+  gap: 2rem;
+}
+
+.contact-container a {
+  transition: 300ms;
+}
+
+.contact-container a:hover {
+  transform: translateY(-4px);
+}
+
+.contact-container-anim {
+  animation-name: fadeIn;
+  animation-duration: 500ms;
+}
+
+.modal {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

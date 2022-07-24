@@ -1,0 +1,178 @@
+@media screen and (max-width: 1200px) {
+    .a-propos {
+        flex-direction: column;
+    }
+
+    .a-propos-panel p {
+        font-weight: 300;
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .a-propos-title p:last-child {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .a-propos p {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .a-propos-content p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .a-propos-head {
+        flex-direction: column;
+    }
+
+
+    .a-propos-panel p {
+        font-weight: 300;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .a-propos-photo img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .parent {
+        flex-direction: column;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-computer-content .nav-title-anim {
+        display: none;
+    }
+
+    .nav-computer-content i#bars {
+        display: unset;
+    }
+
+    .a-propos-content p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .a-propos-panel p {
+        font-weight: 300;
+        font-size: 10px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .nav-content {
+        margin-right: 0;
+    }
+
+    .nav-computer-content i {
+        display: none !important;
+    }
+
+    .nav-mobile-content {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container h1 {
+        font-size: 1.5em;
+    }
+
+    .contact-container p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .a-propos p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .a-propos-content p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .a-propos-title p:last-child {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .a-propos-content {
+        margin-top: 10px;
+    }
+
+    .a-propos-panel h1 {
+        font-weight: 300;
+        font-size: 10px;
+    }
+
+    .a-propos-panel p {
+        font-weight: 300;
+        font-size: 10px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nav .logo p:last-child {
+        display: none;
+    }
+
+    .content p {
+        font-size: 7.3vw;
+    }
+
+    .a-propos p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .a-propos-panel p {
+        font-weight: 300;
+        font-size: 10px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .content p {
+        font-size: 20.3px;
+    }
+
+    .a-propos p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .a-propos-content p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .a-propos-panel p {
+        font-weight: 300;
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    .contact-container {
+        min-width: none;
+    }
+}
